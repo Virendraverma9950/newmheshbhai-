@@ -40,9 +40,9 @@ bot = Client(
     "bot",
     bot_token=os.environ.get("7141439180:AAGDZM4wIbOf6kcXOgw1GR5__xiMD2NFLlk"),
     api_id=int(os.environ.get("25919081"),
-    api_hash=os.environ.get("0bc2fdba14b16b44f0d89729ed8d2118")
-)
-auth_users = [ int(chat) for chat in os.environ.get("1826828317").split(",") if chat != '']
+    api_hash=os.environ.get("0bc2fdba14b16b44f0d89729ed8d2118"))
+
+    auth_users = [ int(chat) for chat in os.environ.get("1826828317").split(",") if chat != '']
 sudo_users = auth_users
 sudo_groups = [ int(chat) for chat in os.environ.get("-1002015954185").split(",")  if chat != '']
 
